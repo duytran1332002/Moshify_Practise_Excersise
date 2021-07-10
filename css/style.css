@@ -1,13 +1,20 @@
-/* Typogropy */
-html {
-  font-size: 62.5%;
-}
 :root {
   --color-primary: #2584ff;
   --color-secondary: #00d9ff;
-  --color-acent: #ff3400;
+  --color-accent: #ff3400;
   --color-heading: #1b0760;
   --color-body: #918ca4;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+/* Typogropy */
+html {
+  font-size: 62.5%;
 }
 
 body {
@@ -61,7 +68,7 @@ a {
   text-decoration: none;
 }
 .link-arrows {
-  color: var(--color-acent);
+  color: var(--color-accent);
   text-transform: uppercase;
   font-size: 2rem;
   font-weight: bold;
@@ -163,4 +170,68 @@ a {
   height: 64px;
   justify-content: center;
   width: 64px;
+}
+
+/* button */
+
+.btn {
+  border-radius: 30px;
+  border: none;
+  outline: none;
+  font-size: 1.8rem;
+  padding: 2rem 3rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  text-align: center;
+  white-space: nowrap;
+  cursor: pointer;
+  margin: 1rem 0;
+}
+
+.btn--block {
+  display: inline-block;
+  width: 100%;
+}
+
+.btn--primary {
+  background: var(--color-primary);
+  color: white;
+}
+
+.btn--primary:hover {
+  background: #2569f6;
+}
+.btn--secondary {
+  background: var(--color-secondary);
+  color: white;
+}
+.btn--secondary:hover {
+  background: #00e8fb;
+}
+.btn--third {
+  background: var(--color-heading);
+  color: white;
+}
+.btn--accent {
+  background: var(--color-accent);
+  color: white;
+}
+.btn--accent:hover {
+  background: #ff4a02;
+}
+.btn--outline {
+  background: white;
+  border: 2px solid var(--color-heading);
+  color: var(--color-heading);
+}
+
+.btn--outline:hover {
+  background: var(--color-heading);
+  color: white;
+}
+
+@media screen and (min-width: 1024px) {
+  .btn {
+    font-size: 1.5rem;
+  }
 }
