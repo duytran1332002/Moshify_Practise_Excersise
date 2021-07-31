@@ -195,7 +195,7 @@ a {
   border: none;
   outline: none;
   font-size: 1.8rem;
-  padding: 2rem 3rem;
+  padding: 2rem 4vw;
   text-transform: uppercase;
   font-weight: 600;
   text-align: center;
@@ -287,6 +287,7 @@ a {
   border: 0;
   flex-grow: 1;
   padding: 1.5rem 2rem;
+  width: 0;
 }
 
 .input-group .btn {
@@ -723,13 +724,14 @@ nav.collapsible--expanded .nav__toggler {
 
 .block-domain__prices {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 6rem);
   font-size: 2rem;
   font-weight: 600;
   justify-items: center;
   max-width: 700px;
   margin: 0 auto;
+  color: var(--color-heading);
 }
 
 @media screen and (min-width: 768px) {
@@ -877,4 +879,9 @@ nav.collapsible--expanded .nav__toggler {
   .footer__heading {
     font-size: 1.6rem;
   }
+}
+
+/* Sign-up Callout */
+.callout-signup {
+  transform: translateY(5rem);
 }
